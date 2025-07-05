@@ -8,6 +8,22 @@
   <title>Figuras 3D por Jesus</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<script>
+function buscarFigura() {
+  const input = document.getElementById('buscar').value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const nombre = card.querySelector('h3').textContent.toLowerCase();
+    if (nombre.includes(input)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
 <body>
   <header>
     <h1>Figuras 3D Artesanales</h1>
@@ -21,6 +37,10 @@
   <main>
     <section id="galeria">
       <h2>Galería de Productos</h2>
+      <div class="buscador">
+  <input type="text" id="buscar" placeholder="Buscar figuras por nombre..." onkeyup="buscarFigura()" />
+</div>
+
       <div class="filtros">
   <button onclick="filtrar('todos')">Todos</button>
   <button onclick="filtrar('anime')">Anime</button>
