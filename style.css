@@ -73,3 +73,89 @@ footer {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.portada {
+  background-image: url('Imagenes/Gemini_Generated_Image_yr4dsbyr4dsbyr4d.png');
+  background-size: cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+#sobre-mi {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 2px solid #ddd;
+}
+
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.sobre-container img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sobre-container .texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.sobre-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sobre-container p {
+  line-height: 1.6;
+  color: #333;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+.card {
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-height: 440px; /* ajusta si es necesario */
+}
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.card p {
+  flex-grow: 1;
+  text-align: center;
+}
+
