@@ -18,15 +18,48 @@ main {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+  justify-items: center;
+  padding: 20px;
 }
 
-.grid img {
-  width: 300px;
+.card {
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.card p {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #555;
 }
 
 a {
@@ -44,35 +77,7 @@ footer {
   padding: 10px;
   background-color: #ddd;
 }
-.card {
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  text-align: center;
-}
 
-.card h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-}
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
-.card img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
 .portada {
   background-image: url('Imagenes/Gemini_Generated_Image_yr4dsbyr4dsbyr4d.png');
   background-size: cover;
@@ -81,18 +86,17 @@ footer {
   color: white;
   text-shadow: 1px 1px 5px black;
 }
+
 @media screen and (max-width: 600px) {
   .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 
   .card {
     width: 90%;
-    margin-bottom: 20px;
   }
 }
+
 #sobre-mi {
   background: #f9f9f9;
   padding: 40px 20px;
@@ -129,33 +133,3 @@ footer {
   line-height: 1.6;
   color: #333;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  padding: 20px;
-}
-.card {
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  min-height: 440px; /* ajusta si es necesario */
-}
-.card h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.card p {
-  flex-grow: 1;
-  text-align: center;
-}
-
