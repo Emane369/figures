@@ -263,6 +263,7 @@ footer {
   border: 2px solid rgba(37, 211, 102, 0.5);
   border-radius: 10px;
   animation: resplandor 1.4s ease-in-out infinite alternate;
+    pointer-events: none;
 }
 
 @keyframes resplandor {
