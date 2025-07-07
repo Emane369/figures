@@ -55,6 +55,9 @@ function filtrar(categoria) {
   });
 }
 </script>
+<div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+  <img id="img-ampliada" src="" alt="Imagen ampliada">
+</div>
 
 <body>
   <header>
@@ -80,115 +83,124 @@ function filtrar(categoria) {
   <button onclick="filtrar('gaming')">Gaming</button>
   <button onclick="filtrar('religioso')">Religioso</button>
 </div>
+<div class="figura-destacada">
+  <h3>⭐ Figura destacada</h3>
+  <div class="card destacada">
+    <img src="Imagenes/Photoroom_20250322_093927 (1).JPEG" alt="ANUBIS"> onclick="ampliarImagen(this.src)"
+    <h3>ANUBIS</h3>
+    <p>Figura artesanal en resina con acabado místico y detallado. <br>Precio: $750 MXN</p>
+    <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'ANUBIS'" target="_blank">Solicitar por WhatsApp</a>
+  </div>
+</div>
 
       <div class="grid">
 
         
         <div class="card anime">
         
-  <img src="Imagenes/IMG_4977.JPEG" alt="STICH">
+  <img src="Imagenes/IMG_4977.JPEG" alt="STICH"> onclick="ampliarImagen(this.src)"
   <h3>Stitch Azul</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $180 MXN</p>
   <a href="https://wa.me/5213121765225?text=Hola! Me interesa la figura 'Stitch Azul'" target="_blank">Solicitar por WhatsApp</a>
 </div>  
 <div class="card anime">
-  <img src="Imagenes/IMG_6350.JPEG" alt="VENOM">
+  <img src="Imagenes/IMG_6350.JPEG" alt="VENOM"> onclick="ampliarImagen(this.src)"
   <h3>VENOM</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $900 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'VENOM'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250121_204424.JPEG" alt="MEW AND RAYQUAZA">
+<img src="Imagenes/Photoroom_20250121_204424.JPEG" alt="MEW AND RAYQUAZA"> onclick="ampliarImagen(this.src)"
   <h3>MEW / RAYQUAZA</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $190 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'MEW/RAYQUAZA'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250121_204548.JPEG" alt="MARINE PIKACHU">
+<img src="Imagenes/Photoroom_20250121_204548.JPEG" alt="MARINE PIKACHU"> onclick="ampliarImagen(this.src)"
   <h3>MARINE PIKACHU</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $190 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'MARINE PIKACHU'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250127_185209.JPEG" alt="LUFFI">
+<img src="Imagenes/Photoroom_20250127_185209.JPEG" alt="LUFFI"> onclick="ampliarImagen(this.src)"
   <h3>LUFFI</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'LUFFI'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250131_103438.JPEG" alt="HODOR">
+<img src="Imagenes/Photoroom_20250131_103438.JPEG" alt="HODOR"> onclick="ampliarImagen(this.src)"
   <h3>HODOR</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $450 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'HODOR'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card religioso">
-<img src="Imagenes/Photoroom_20250207_104553 (1).JPEG" alt="SAN BENITO">
+<img src="Imagenes/Photoroom_20250207_104553 (1).JPEG" alt="SAN BENITO"> onclick="ampliarImagen(this.src)"
   <h3>SAN BENITO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $990 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'SAN BENITO'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card mitologia">
-<img src="Imagenes/Photoroom_20250214_114551 (1).JPEG" alt="CR7">
+<img src="Imagenes/Photoroom_20250214_114551 (1).JPEG" alt="CR7"> onclick="ampliarImagen(this.src)"
   <h3>CRISTIANO RONALDO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'CR7'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250220_092254.JPEG" alt="ZORO">
+<img src="Imagenes/Photoroom_20250220_092254.JPEG" alt="ZORO"> onclick="ampliarImagen(this.src)"
   <h3>ZORO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'ZORO'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card mitologia">
-<img src="Imagenes/Photoroom_20250220_204630 (1).JPEG" alt="BUDHA HOMERO">
+<img src="Imagenes/Photoroom_20250220_204630 (1).JPEG" alt="BUDHA HOMERO"> onclick="ampliarImagen(this.src)"
   <h3>BUDA HOMERO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'BUDA HOMERO'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card mitologia">
-<img src="Imagenes/Photoroom_20250221_091110.JPEG" alt="UNICORNIO">
+<img src="Imagenes/Photoroom_20250221_091110.JPEG" alt="UNICORNIO"> onclick="ampliarImagen(this.src)"
   <h3>UNICORNIO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $180 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'UNICORNIO'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card gaming">
-<img src="Imagenes/Photoroom_20250224_094458.JPEG" alt="ZELDA CHESS">
+<img src="Imagenes/Photoroom_20250224_094458.JPEG" alt="ZELDA CHESS"> onclick="ampliarImagen(this.src)"
   <h3>ZELDA CHESS</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $990 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'ZELDA CHESS'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime">
-<img src="Imagenes/Photoroom_20250307_111232.JPEG" alt="ONSLAUGHT">
+<img src="Imagenes/Photoroom_20250307_111232.JPEG" alt="ONSLAUGHT"> onclick="ampliarImagen(this.src)"
   <h3>ONSLAUGHT</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'ONSLAUGHT'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card mitologia">
-<img src="Imagenes/Photoroom_20250322_093927 (1).JPEG" alt="ANUBIS">
+<img src="Imagenes/Photoroom_20250322_093927 (1).JPEG" alt="ANUBIS"> onclick="ampliarImagen(this.src)"
   <h3>ANUBIS</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'ANUBIS'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card gaming">
-<img src="Imagenes/Photoroom_20250325_125300.JPEG" alt="MASTER CHIEF HALO">
+<img src="Imagenes/Photoroom_20250325_125300.JPEG" alt="MASTER CHIEF HALO"> onclick="ampliarImagen(this.src)"
   <h3>MSTER CHIEF HALO</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'MASTER CHIEF HALO'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card religioso">
-<img src="Imagenes/Photoroom_20250402_084707.JPEG" alt="SAN JUDAS CHIBI">
+<img src="Imagenes/Photoroom_20250402_084707.JPEG" alt="SAN JUDAS CHIBI"> onclick="ampliarImagen(this.src)"
   <h3>SAN JUDAS CHIBI</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $450 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'SAN JUDAS CHIBI'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime gaming"> 
-<img src="Imagenes/Photoroom_20250404_085910.JPEG" alt="PREDADOR">
+<img src="Imagenes/Photoroom_20250404_085910.JPEG" alt="PREDADOR"> onclick="ampliarImagen(this.src)"
   <h3>PREDADOR</h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $750 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'PREDADOR'" target="_blank">Solicitar por WhatsApp</a>
 </div>
 <div class="card anime"> 
-<img src="Imagenes/Photoroom_20250506_103904 (1).JPEG" alt="HARLEY QUEEN">
+<img src="Imagenes/Photoroom_20250506_103904 (1).JPEG" alt="HARLEY QUEEN"> onclick="ampliarImagen(this.src)"
   <h3>HARLEY </h3>
   <p>Figura personalizada en resina pintada a mano.<br>Precio: $1,300 MXN</p>
   <a href="https://wa.me/3121765225?text=Hola! Me interesa la figura 'HARLEY'" target="_blank">Solicitar por WhatsApp</a>
@@ -223,3 +235,15 @@ function filtrar(categoria) {
   <script src="script.js"></script>
 </body>
 </html>
+<script>
+function ampliarImagen(src) {
+  const lightbox = document.getElementById("lightbox");
+  const imgAmpliada = document.getElementById("img-ampliada");
+  imgAmpliada.src = src;
+  lightbox.style.display = "flex";
+}
+
+function cerrarLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
