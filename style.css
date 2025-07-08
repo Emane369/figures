@@ -412,4 +412,36 @@ footer {
   max-width: 300px;
   text-align: right;
 }
+.destacado-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.intro-lateral {
+  max-width: 300px;
+  text-align: right;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.figura-destacada .card {
+  width: 300px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .destacado-layout {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro-lateral {
+    text-align: center;
+  }
+}
 
