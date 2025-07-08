@@ -58,7 +58,23 @@ function filtrar(categoria) {
 <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
   <img id="img-ampliada" src="" alt="Imagen ampliada"/>
 </div>
-
+<!-- Botón flotante de compartir -->
+<button class="share-float" onclick="compartirPortafolio()" title="Compartir portafolio">📤</button>
+<script>
+  function compartirPortafolio() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Portafolio Jesús Resin Art',
+        text: 'Checa este portafolio de figuras artesanales únicas 🎨🧪',
+        url: window.location.href
+      })
+      .then(() => console.log('Compartido exitosamente'))
+      .catch((error) => console.error('Error al compartir:', error));
+    } else {
+      alert('Tu navegador no admite la función de compartir automáticamente. ¡Puedes copiar el enlace manualmente!');
+    }
+  }
+</script>
 <body>
   
   <nav class="barra-sticky">
@@ -258,7 +274,6 @@ function cerrarLightbox() {
 </script>
 <script src="script.js"></script>
 <a href="https://wa.me/5213121765225" class="whatsapp-float" target="_blank">💬</a>
-</body>
 </html>
 
 
