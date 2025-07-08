@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Figuras 3D por Jesus</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer data-domain="emane369.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <script>
 function buscarFigura() {
@@ -75,6 +74,20 @@ function filtrar(categoria) {
       alert('Tu navegador no admite la función de compartir automáticamente. ¡Puedes copiar el enlace manualmente!');
     }
   }
+</script>
+<script>
+  const animElements = document.querySelectorAll('.scroll-anim');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  animElements.forEach(el => observer.observe(el));
 </script>
 <body>
   
