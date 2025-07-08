@@ -399,4 +399,17 @@ footer {
   border-radius: 5px;
   font-weight: bold;
 }
+.destacado-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+
+.intro-lateral {
+  max-width: 300px;
+  text-align: right;
+}
 
