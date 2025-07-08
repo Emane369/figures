@@ -1,14 +1,34 @@
+function buscarFigura() {
+  const input = document.getElementById('buscar').value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
 
-// Ahora activa el observer
-const animElements = document.querySelectorAll('.scroll-anim');
+  cards.forEach(card => {
+    const nombre = card.querySelector('h3').textContent.toLowerCase();
+    const esDestacada = card.classList.contains('destacada');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+    if (esDestacada || nombre.includes(input)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
     }
   });
-}, { threshold: 0.1 });
+}
 
-animElements.forEach(el => observer.observe(el));
+function filtrar(categoria) {
+  const cards = document.querySelectorAll('.card');
+  const terminoBusqueda = document.getElementById('buscar').value.toLowerCase();
+
+  cards.forEach(card => {
+    const nombre = card.querySelector('h3').textContent.toLowerCase();
+    const coincideBusqueda = nombre.includes(terminoBusqueda);
+    const coincideCategoria = categoria === 'todos' || card.classList.contains(categoria);
+    const esDestacada = card.classList.contains('destacada');
+
+    if (esDestacada || (coincideBusqueda && coincideCategoria)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
